@@ -6,22 +6,15 @@
     <title>Menú Desplegable</title>
      <link type="text/css" href="style.css" rel="stylesheet">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"rel="stylesheet">
     
 </head>
+<header><img src="img/logo (1).png" alt="Logo de la empresa de Café" id="logo"><b>Trunk & Coffee</b></header>
 <body>
-  <header>
-    <!-- Logo de la cafetería. Asegúrate de que la ruta sea correcta -->
-    <img src="../EjemploMenu/img/logo (1).png" alt="Logo de la empresa de Café" id="logo">
-    <!-- Nombre destacado de la marca -->
-    <b>Trunk & Coffee</b>
-  </header>
-    <!-- Barra de navegación principal. Podrías reemplazarla por un navbar de Bootstrap para responsive -->
     <nav>
         <ul>
             <li>
-                <!-- Enlace a la página de inicio -->
-                <a href="Inicio.html" class="active">Inicio</a>
+                <a href="Inicio.html">Inicio</a>
             </li>
             <li>
                 <a href="#">Carta</a>
@@ -30,109 +23,23 @@
                 <a href="#">Equipo</a>
             </li>
             <li>
-                <a href="#">Servicio</a>
+                <a href="servicios.html">Servicios</a>
             </li>
             <li>
-                <a href="#">Pedir</a>
+                <a href="#">A Domicilio</a>
             </li>
         </ul>
     </nav>
 
-    <!-- Bloque de bienvenida centrado (usas estilo inline; mejor mover a style.css) -->
     <div style="padding: 40px; text-align: center;">
-        <h3>El aroma que despierta tus mañanas</h3>
-        <p>
-            En Trunk & Coffee preparamos cada taza con pasión, seleccionando granos de origen sostenible
-            para ofrecerte una experiencia auténtica.
-        </p>
+        <h1>Menú Desplegable Simple</h1>
+        <p>Pasa el ratón por encima de "Productos" o "Servicios" para ver el submenú</p>
     </div>
-
-    <!-- Sección 'Sobre nosotros' con centrado de texto (clase de Bootstrap text-center) -->
-    <section class="sobre-nosotros text-center">
-        <div class="container">
-            <h4>Nuestra Historia</h4>
-
-            <!-- Texto descriptivo; usa mt-4 para margen superior (clase Bootstrap) -->
-            <p class="mt-4">
-                Nacimos con una idea simple: compartir el amor por el buen café. En 
-                <strong>Trunk & Coffee</strong>, tostamos nuestros granos con cuidado y servimos 
-                cada bebida con el cariño de una cafetería artesanal. Queremos que cada 
-                visita sea un momento para disfrutar, conversar y reconectar.
-            </p>
-
-            <!-- Imagen del local. Sacada con IA-->
-            <div class="col-12">
-                <img src="../EjemploMenu/img/e1f647f1-8b2a-43ed-8d69-2410bc2bf812.png" 
-                     alt="Interior del local de café" 
-                     class="local">
-            </div>
-        </div>
-        <!-- Uso de <br><br> para espacio: mejor usar utilidades de Bootstrap (mb-, py-) o CSS -->
-        <br><br>
-    </section>
-
-    <!-- Sección de productos destacados -->
-    <section class="productos text-center">
-        <div class="container">
-            <h3>Lo más pedido</h3>
-
-            <!-- Fila de Bootstrap centrada que contiene las tarjetas -->
-            <div class="row justify-content-center">
-                
-                <!-- Producto 1 -->
-                <div class="col-md-6 col-xl-4">
-                    <div class="card">
-                        <!-- Imagen del producto; usa alt descriptivo para accesibilidad -->
-                        <img src="https://img.freepik.com/foto-gratis/primer-plano-taza-cafe-granos-cafe-saco-platillo-leche-canela-seca-sobre-salvamanteles-superficie-blanca-vertical_176474-5053.jpg?semt=ais_hybrid&w=740&q=80" 
-                             class="card-img-top" 
-                             alt="Latte con canela">
-                        <div class="card-body">
-                            <!-- Título del producto -->
-                            <h5 class="card-title">Latte</h5>
-                            <!-- Descripción corta -->
-                            <p class="card-text">Suave mezcla de café y leche vaporizada con un toque aromático de canela.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Producto 2 -->
-                <div class="col-md-6 col-xl-4">
-                    <div class="card">
-                        <!-- Ten en cuenta que las URLs de Unsplash pueden necesitar parámetros para tamaños -->
-                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" 
-                             class="card-img-top" 
-                             alt="Espresso doble">
-                        <div class="card-body">
-                            <h5 class="card-title">Espresso</h5>
-                            <p class="card-text">Intenso y aromático, preparado con nuestros mejores granos tostados.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Producto 3 -->
-                <div class="col-md-6 col-xl-4">
-                    <div class="card">
-                        <img src="https://images.unsplash.com/photo-1561882468-9110e03e0f78" 
-                             class="card-img-top" 
-                             alt="Cold Brew artesanal">
-                        <div class="card-body">
-                            <h5 class="card-title">Flat White</h5>
-                            <!-- Nota: la descripción menciona 'infusionado en frío' (Cold Brew). Revisa que coincida con 'Flat White'. -->
-                            <p class="card-text">Refrescante café infusionado en frío, perfecto para los días calurosos.</p>
-                        </div>
-                    </div>
-                    <!-- Espaciado extra con <br><br><br><br>: sustituir por utilidades (p- / mb-) en CSS -->
-                    <br><br><br><br>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Pie de página con derechos y enlace de contacto -->
     <footer>
-        <p>© Trunk & Coffee</p>
-        <a href="#" class="servicios-link">Servicio</a>
+        <div class="container my-4">
+            <p>© TRUNK & COFFEE</p>
+            <a href="servicios.html">Servicios</a>
+        </div>
     </footer>
 </body>
 </html>
