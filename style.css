@@ -1,0 +1,122 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+        }
+
+        nav {
+            background: #be9477;
+        }
+
+        /* Estilo base de la lista del menú */
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center; /* Centra los elementos */
+        }
+
+        /* Cada elemento principal del menú */
+        nav > ul > li {
+            position: relative; /* Necesario si se agregan submenús */
+        }
+
+        /* Enlaces del menú principal */
+        nav > ul > li > a {
+            display: block;
+            padding: 15px 20px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        /* Estilo para el menú activo */
+            nav > ul > li > a.active {
+            background: #caac83;       /* Mismo hover para que resalte */
+            font-weight: bold;
+            border-bottom: 3px solid #7a5a43; /* Línea inferior opcional */
+            }
+
+        /* Efecto hover del menú */
+        nav > ul > li > a:hover {
+            background: #caac83;
+            font-weight: bold;
+        }
+
+        /* Mostrar submenú al pasar (si existiera) */
+        nav > ul > li:hover .submenu {
+            display: block;
+        }
+
+        /* ================================
+        ENCABEZADO / HEADER
+        ================================ */
+        header {
+            position: relative;
+            width: 100%;
+            background-color: #a17e65;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 15px 0;
+            display: flex;               /* Para centrar el logo y texto */
+            align-items: center;
+            justify-content: center;
+            gap: 10px;                   /* Separación entre logo y texto */
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        #logo {
+            width: 80px; /* Tamaño del logo */
+            height: auto;
+        }
+
+        /* ================================
+        PIE DE PÁGINA
+        ================================ */
+        footer {
+            position: fixed;
+            bottom: 0; 
+            left: 0;
+            width: 100%;
+            background-color: #a17e65;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 10px 0;
+            font-weight: bold;
+            font-size: 14px;
+            transition: all 0.3s ease;  /* Efecto suave al hacer hover */
+            z-index: 10;
+        }
+
+        /* Enlace oculto (aparece al hacer hover en el footer) */
+        .servicios-link {
+            display: none;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        /* Efectos al pasar el mouse sobre el footer */
+        footer:hover {
+            padding: 20px 0;
+            font-size: 16px;
+            background-color: #be9477;
+        }
+
+        footer:hover .servicios-link {
+            display: block;
+            margin-top: 5px;
+        }
+
+        /* ================================
+        IMAGEN LOCAL
+        ================================ */
+        .local {
+            border-radius: 30px; /* Bordes redondeados */
+            width: 75%;
+        }
