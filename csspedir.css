@@ -1,0 +1,183 @@
+/* ====== RESETEO ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ====== CUERPO ====== */
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #333;
+}
+
+/* ====== CABECERA ====== */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: #a17e65;
+  color: #000;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+#logo {
+  width: 70px;
+  height: auto;
+  border-radius: 10px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* ====== MENÚ ====== */
+nav {
+  background: #be9477;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 12px 18px;
+  color: #000;
+  text-decoration: none;
+  transition: background 0.3s;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  background: #caac83;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* ====== CONTENIDO ====== */
+.contenido {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+/* ====== FORMULARIO ====== */
+.domicilio {
+  flex: 1 1 400px;
+  max-width: 550px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+fieldset {
+  margin-bottom: 25px;
+  border: 1px solid #ddd;
+  padding: 15px 20px;
+  border-radius: 6px;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+label {
+  display: block;
+  margin: 6px 0;
+  font-size: 0.95em;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 1em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Mostrar campo dirección solo si se marca “a domicilio” */
+.tipo-entrega .direccion-entrega {
+  display: none;
+  margin-top: 10px;
+}
+
+.tipo-entrega:has(input[value="domicilio"]:checked) .direccion-entrega {
+  display: block;
+}
+
+/* ====== BOTÓN ====== */
+button {
+  display: block;
+  margin: 20px auto;
+  background-color: #1ba001;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #28d605;
+}
+
+/* ====== MAPA ====== */
+.mapa {
+  flex: 1 1 400px;
+  max-width: 550px;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ====== FOOTER ====== */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #a17e65;
+  color: #000;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+}

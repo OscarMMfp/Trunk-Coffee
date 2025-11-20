@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/csspedir.css">
+</head>
+
+<body>
+    <!-- CABECERA -->
+    <header>
+        <img id="logo" src="../img/logo (1).png" alt="Logo de la cafetería">
+        <h1>Trunk & Coffee</h1>
+    </header>
+
+    <!-- MENÚ -->
+    <nav>
+        <ul>
+            <li>
+                <!-- Enlace a la página de inicio -->
+                <a href="Inicio.html" class="active">Inicio</a>
+            </li>
+            <li><a href="#">Carta</a></li>
+            <li><a href="#">Equipo</a></li>
+            <li><a href="#">Servicio</a></li>
+            <li><a href="#">Pedir</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="contenido">
+
+        <div class="domicilio">
+
+            <fieldset>
+                <legend>¿A nombre de quién será el pedido?</legend>
+
+                <label for="nombre">Nombre completo:</label>
+                <input 
+                    type="text" 
+                    id="nombre" 
+                    name="nombre" 
+                    placeholder="Escribe tu nombre" 
+                    required
+                >
+            </fieldset>
+
+            <fieldset class="tipo-entrega">
+                <legend>Tipo de entrega</legend>
+
+                <label>
+                    <input type="radio" name="entrega" value="tienda" required> 
+                    Recoger en tienda
+                </label>
+
+                <label>
+                    <input type="radio" name="entrega" value="domicilio"> 
+                    A domicilio
+                </label>
+
+                <div class="direccion-entrega">
+                    <label for="direccion">Dirección de entrega:</label>
+                    <input 
+                        type="text" 
+                        id="direccion" 
+                        name="direccion" 
+                        placeholder="Calle, número, colonia, ciudad"
+                    >
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>¿Qué quieres pedir?</legend>
+
+                <select id="select-cafe" name="cafe" required>
+                    <option value="">-- Selecciona un CAFÉ --</option>
+                    <option value="cafe1">Espresso</option>
+                    <option value="cafe2">Macchiato</option>
+                    <option value="cafe3">Latte</option>
+                    <option value="cafe4">Capuccino</option>
+                    <option value="cafe5">Frappuccino</option>
+                    <option value="cafe6">Chocolate</option>
+                    <option value="cafe7">Flat White</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>¿Algún extra para tu café?</legend>
+
+                <label><input type="radio" name="extra" value="nada" checked> Nada</label>
+                <label><input type="radio" name="extra" value="canela"> Canela</label>
+                <label><input type="radio" name="extra" value="jengibre"> Jengibre</label>
+                <label><input type="radio" name="extra" value="nuez"> Nuez Moscada</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>¿Pensando en algo de comer?</legend>
+
+                <label><input type="checkbox" name="comida" value="4"> Nada</label>
+                <label><input type="checkbox" name="comida" value="1"> Egg Sandwich</label>
+                <label><input type="checkbox" name="comida" value="2"> Cheesecake Frambuesa</label>
+                <label><input type="checkbox" name="comida" value="3"> Croissant de mantequilla</label>
+            </fieldset>
+
+            <button type="submit">Confirmar pedido</button>
+        </div>
+
+        <section class="mapa">
+            <iframe 
+                src="https://www.openstreetmap.org/export/embed.html?bbox=7.3806%2C43.9346%2C7.4206%2C43.9546&amp;layer=mapnik"
+                allowfullscreen 
+                loading="lazy">
+            </iframe>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© Trunk & Coffee</p>
+        <a href="#" class="servicios-link">Servicio</a>
+    </footer>
+
+</body>
+</html>
